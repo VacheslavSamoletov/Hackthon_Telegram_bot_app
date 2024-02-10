@@ -1,0 +1,148 @@
+[debug] [2024-02-10T10:40:49.033Z] ----------------------------------------------------------------------
+[debug] [2024-02-10T10:40:49.038Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Vacheslav\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-10T10:40:49.039Z] CLI Version:   13.2.1
+[debug] [2024-02-10T10:40:49.039Z] Platform:      win32
+[debug] [2024-02-10T10:40:49.039Z] Node Version:  v20.11.0
+[debug] [2024-02-10T10:40:49.040Z] Time:          Sat Feb 10 2024 13:40:49 GMT+0300 (Москва, стандартное время)
+[debug] [2024-02-10T10:40:49.040Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-10T10:40:49.051Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-10T10:40:49.052Z] > authorizing via signed-in user (vacheslavsav@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Vacheslav\PycharmProjects\pythonProject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-10T10:41:42.870Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-02-10T10:41:44.133Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-02-10T10:41:44.133Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project literallylitter-968b9 (LiterallyLitter) 
+[info] 
+=== Functions Setup
+[debug] [2024-02-10T10:41:47.349Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-10T10:41:47.350Z] > authorizing via signed-in user (vacheslavsav@gmail.com)
+[debug] [2024-02-10T10:41:47.350Z] [iam] checking project literallylitter-968b9 for permissions ["firebase.projects.get"]
+[debug] [2024-02-10T10:41:47.351Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/literallylitter-968b9:testIamPermissions [none]
+[debug] [2024-02-10T10:41:47.351Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/literallylitter-968b9:testIamPermissions x-goog-quota-user=projects/literallylitter-968b9
+[debug] [2024-02-10T10:41:47.351Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/literallylitter-968b9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-10T10:41:48.586Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/literallylitter-968b9:testIamPermissions 200
+[debug] [2024-02-10T10:41:48.586Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/literallylitter-968b9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-10T10:41:48.587Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-02-10T10:41:48.587Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/literallylitter-968b9
+[debug] [2024-02-10T10:41:48.588Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-02-10T10:41:48.589Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/literallylitter-968b9
+[debug] [2024-02-10T10:41:49.985Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/runtimeconfig.googleapis.com 200
+[debug] [2024-02-10T10:41:49.985Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-02-10T10:41:50.071Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com 200
+[debug] [2024-02-10T10:41:50.071Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-02-10T10:41:50.071Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-02-10T10:41:50.072Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/literallylitter-968b9
+[debug] [2024-02-10T10:41:51.050Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-02-10T10:41:51.050Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-02-10T10:42:01.065Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-02-10T10:42:01.065Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/literallylitter-968b9
+[debug] [2024-02-10T10:42:02.267Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com 200
+[debug] [2024-02-10T10:42:02.267Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2024-02-10T10:42:25.031Z] Running command with virtualenv: command="C:\Users\Vacheslav\PycharmProjects\pythonProject\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2024-02-10T10:42:29.094Z] Error: spawn "C:\Users\Vacheslav\PycharmProjects\pythonProject\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\Vacheslav\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\Vacheslav\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\Vacheslav\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-02-10T10:43:16.505Z] ----------------------------------------------------------------------
+[debug] [2024-02-10T10:43:16.509Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Vacheslav\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-10T10:43:16.510Z] CLI Version:   13.2.1
+[debug] [2024-02-10T10:43:16.510Z] Platform:      win32
+[debug] [2024-02-10T10:43:16.510Z] Node Version:  v20.11.0
+[debug] [2024-02-10T10:43:16.510Z] Time:          Sat Feb 10 2024 13:43:16 GMT+0300 (Москва, стандартное время)
+[debug] [2024-02-10T10:43:16.511Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-10T10:43:16.521Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-10T10:43:16.522Z] > authorizing via signed-in user (vacheslavsav@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Vacheslav\PycharmProjects\pythonProject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-10T10:43:35.016Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-02-10T10:43:35.663Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-02-10T10:43:35.663Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project literallylitter-968b9 (LiterallyLitter) 
+[info] 
+=== Functions Setup
+[debug] [2024-02-10T10:43:38.356Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-10T10:43:38.357Z] > authorizing via signed-in user (vacheslavsav@gmail.com)
+[debug] [2024-02-10T10:43:38.357Z] [iam] checking project literallylitter-968b9 for permissions ["firebase.projects.get"]
+[debug] [2024-02-10T10:43:38.358Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/literallylitter-968b9:testIamPermissions [none]
+[debug] [2024-02-10T10:43:38.358Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/literallylitter-968b9:testIamPermissions x-goog-quota-user=projects/literallylitter-968b9
+[debug] [2024-02-10T10:43:38.358Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/literallylitter-968b9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-10T10:43:39.244Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/literallylitter-968b9:testIamPermissions 200
+[debug] [2024-02-10T10:43:39.244Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/literallylitter-968b9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-10T10:43:39.245Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-02-10T10:43:39.245Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/literallylitter-968b9
+[debug] [2024-02-10T10:43:39.246Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-02-10T10:43:39.247Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/literallylitter-968b9
+[debug] [2024-02-10T10:43:40.469Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/runtimeconfig.googleapis.com 200
+[debug] [2024-02-10T10:43:40.469Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-02-10T10:43:40.470Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com 200
+[debug] [2024-02-10T10:43:40.470Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/literallylitter-968b9/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2024-02-10T10:44:03.920Z] Running command with virtualenv: command="C:\Users\Vacheslav\PycharmProjects\pythonProject\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2024-02-10T10:44:06.145Z] Error: spawn "C:\Users\Vacheslav\PycharmProjects\pythonProject\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\Vacheslav\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\Vacheslav\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\Vacheslav\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+[error] 
+[error] Error: An unexpected error has occurred.
